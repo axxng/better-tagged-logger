@@ -1,0 +1,11 @@
+inherit_from:
+  - .rubocop_permanent_exclude.yml
+  - .rubocop_enabled.yml
+  - .rubocop_disabled.yml
+  - .rubocop_todo.yml
+
+require:
+  - ./rubo_cop/cop/custom_cops/logs_cop.rb
+
+AllCops:
+  SuggestExtensions: false

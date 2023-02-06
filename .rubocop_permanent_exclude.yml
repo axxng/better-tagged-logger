@@ -1,0 +1,5 @@
+CustomCops/LogsCop:
+  Exclude:
+    - 'spec/**/*' # so that you can write specs like `expect(Rails.logger.messages).to include('something')`
+    - 'lib/tagged_logger.rb' # do not check this file since it should be the only one doing `Rails.logger.send`
+    - 'bin/**/*' # do not enforce on these files as we do not need that control
